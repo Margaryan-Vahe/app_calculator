@@ -46,10 +46,10 @@ public class Controller {
     private Button btn_9;
 
     @FXML
-    private Button btn_clear;
+    private Button btn_clean;
 
     @FXML
-    private Button btn_clearAll;
+    private Button btn_cleanAll;
 
     @FXML
     private Button btn_comma;
@@ -111,8 +111,8 @@ public class Controller {
         btn_9.setOnAction(event -> {
             addNumber(9);
         });
-        btn_clearAll.setOnAction(event -> {
-            clearAllButton();
+        btn_cleanAll.setOnAction(event -> {
+            cleanAllButton();
         });
         btn_plus.setOnAction(event -> {
             pressMathButton('+');
@@ -136,8 +136,8 @@ public class Controller {
                 label_field.setText(str_num);
             }
         });
-        btn_clear.setOnAction(event -> {
-            clearNumber();
+        btn_clean.setOnAction(event -> {
+            cleanNumber();
         });
     }
 
@@ -177,7 +177,7 @@ public class Controller {
         label_field.setText(str_num);
     }
 
-    void clearNumber() {
+    void cleanNumber() {
         this.str_num = label_field.getText();
         if (this.str_num.length() > 0) {
             String new_str_num = this.str_num.substring(0, this.str_num.length() - 1);
@@ -195,7 +195,7 @@ public class Controller {
     }
 
 
-    void clearAllButton() {
+    void cleanAllButton() {
         str_num = "0";
         label_field.setText(str_num);
         str_num = "";

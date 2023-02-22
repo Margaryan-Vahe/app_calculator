@@ -30,7 +30,7 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="btn_clearAll" mnemonicParsing="false" prefHeight="68.0" prefWidth="75.0" text="C">
+            <Button fx:id="btn_cleanAll" mnemonicParsing="false" prefHeight="68.0" prefWidth="75.0" text="C">
                <font>
                   <Font size="20.0" />
                </font>
@@ -40,7 +40,7 @@
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button fx:id="btn_clear" mnemonicParsing="false" prefHeight="68.0" prefWidth="75.0" text="←" GridPane.columnIndex="2">
+            <Button fx:id="btn_clean" mnemonicParsing="false" prefHeight="68.0" prefWidth="75.0" text="←" GridPane.columnIndex="2">
                <font>
                   <Font size="20.0" />
                </font>
